@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>W3.CSS</title>
+    <link rel="stylesheet" href="w3.css">
+    <style> 
+        body{ 
+            background-image: url("hal.png"); 
+            background-repeat: no-repeat; 
+            background-size: cover;
+        } 
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="banner.png" style="height: 499px; width: 1366px">
+    </div>
+    
+    <div class="w3-bar w3-purple w3-text-white">
+        <button class="w3-bar-item w3-button" onclick="openMenu('Profil')">Profil</button>
+        <button class="w3-bar-item w3-button" onclick="openMenu('Earth')">Earth</button>
+        <button class="w3-bar-item w3-button" onclick="openMenu('Moon')">Moon</button>
+        <button class="w3-bar-item w3-button" onclick="openMenu('Mars')">Mars</button>
+        <button class="w3-bar-item w3-button" onclick="openMenu('Saturn')">Saturn</button>
+    </div>
+    <div id="Profil" class="w3-container menu" style="display:none">
+        <center><h2>Profil</h2>
+        <br>
+        <h4 class="w3-margin">Name : Wildan Azhar<br>NIM : 10121094<br>Class : Informatika - 3</h4></center>
+
+    </div>
+    <div id="Earth" class="w3-container menu" style="display:none">
+        <h2>Earth</h2>
+                <img class="w3-animate-fading" src="earth.png" style="width: 36%">
+  <pre style="font-family: Arial;">
+  Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large amounts of water can be found throughout the Solar System, 
+  About 71% of Earth's surface is made up of the ocean, dwarfing Earth's polar ice, lakes and rivers. The remaining 29% of Earth's surface is land, consisting of 
+  continents and islands. Earth's surface layer is formed of several slowly moving tectonic plates, interacting to produce mountain ranges, volcanoes and earthquakes. 
+                    
+  Earth's liquid outer core generates the magnetic field that shapes Earth's magnetosphere, deflecting destructive solar winds.Earth's atmosphere consists 
+  mostly of nitrogen and oxygen.More solar energy is received by tropical regions than polar regions and is redistributed by atmospheric and ocean circulation. 
+  Greenhouse gases also play an important role in regulating the surface temperature.
+
+  A region's climate is not only determined by latitude, but also by elevation and proximity to moderating oceans, among other factors. 
+  Severe weather, such as tropical cyclones, thunderstorms, and heatwaves, occurs in most areas and greatly impacts life.
+  </pre>
+    </div>
+    <div id="Moon" class="w3-container menu" style="display:none">
+        <h2>Moon</h2>
+        <img class="w3-animate-bottom" src="moon.png" style="width: 36%">
+<pre style="font-family: arial;">
+  The Moon is Earth's only natural satellite. At about one-quarter the diameter of Earth (comparable to the width of Australia), 
+  it is the largest natural satellite in the Solar System relative to the size of a major planet,[f] the fifth largest satellite in the Solar System overall, 
+  and larger than any known dwarf planet.
+
+  The Moon is a planetary-mass object that formed a differentiated rocky body, making it a satellite planet under the geophysical definitions of the term.
+  It lacks any significant atmosphere, hydrosphere, or magnetic field. Its surface gravity is about one-sixth of Earth's 
+</pre>
+    </div>
+    <div id="Mars" class="w3-container menu" style="display:none">
+        <h2>Mars</h2>
+        <img class="w3-animate-top" src="mars.png" style="width: 36%">
+<pre style="font-family: arial;">
+  Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. 
+  In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".
+
+  The latter refers to the effect of the iron oxide prevalent on Mars's surface, which gives it a reddish appearance, 
+  that is distinctive among the astronomical bodies visible to the naked eye.Mars is a terrestrial planet with a thin atmosphere, 
+  with surface features reminiscent of the impact craters of the Moon, and the valleys, deserts and polar ice caps of Earth.
+</pre>
+    </div>
+    <div id="Saturn" class="w3-container menu" style="display:none">
+        <h2>Saturn</h2>
+        <img class="w3-animate-zoom" src="saturn.png" alt="Artis Korea" style="width: 36%">
+<pre style="font-family: arial;">
+  Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about 
+  nine and a half times that of Earth. It only has one-eighth the average density of Earth; however, with its larger volume, 
+  Saturn is over 95 times more massive.
+
+  Saturn is named after the Roman god of wealth and agriculture. Its astronomical symbol (♄) has been traced back to the Greek Oxyrhynchus Papyri, 
+  where it can be seen to be a Greek kappa-rho with a cross-bar, as an abbreviation for Κρονος (Cronos), the Greek name for the planet. It later came to look like 
+  a lower-case Greek eta, with the cross added at the top in the 16th century.
+</pre>
+    </div>
+    <script>
+        function openMenu(namaMenu) {
+            var i;
+            var x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(namaMenu).style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
